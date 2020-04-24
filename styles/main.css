@@ -1,0 +1,36 @@
+html {
+    background-color: floralwhite;
+}
+
+/**Navigation**/
+nav ul {
+    color: darkslategray;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li {
+    background-color: darkseagreen;
+    border: .5px dotted darkolivegreen;
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.open li {
+    display: block;
+}
+
+/**FOOTER**/
+footer {
+    text-align: center;
+}
