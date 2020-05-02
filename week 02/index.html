@@ -48,7 +48,42 @@
             * false<br>
             * null<br>
             * undefined<br>
-
+            <p>Don’t Repeat Yourself,or DRY, is a principle of programming that specifies that every<br>
+                part of a program should only be written once. This avoids duplication and means there’s<br>
+                no need to keep multiple pieces of code up to date and in sync.<br>
+                <br>
+                You might have noticed that the answer to the last example was slightly incorrect<br>
+                (it should be just 3.3 recurring, with no 5 on the end). This highlights a problem when<br>
+                doing division in JavaScript (or calculations on any computer, for that matter).<br>
+                The problem stems from the fact that computers use base 2 in the background and therefore<br>
+                struggle to represent any fractions where the denominator is not a power of 2. This means that<br>
+                some division calculations can often have slight rounding errors.<br>
+                <br>
+                function mean(...values) {
+                let total = 0;
+                for(const value of values) {
+                total += value;
+                }
+                return total/values.length;
+                }<br>
+                <br>
+                Longer functions will still require curly braces to deliminate the body of the function and<br>
+                the return keyword at the end, as can be seen in this (rather simplistic) tax-calculating function:<br>
+                <br>
+                const tax = (salary) => {
+                const taxable = salary - 8000;
+                const lowerRate = 0.25 * taxable;
+                taxable = taxable - 20000;
+                const higherRate = 0.4 * taxable;
+                return lowerRate + higherRate;
+                }
+                <br>
+                <br>
+                <p><strong style="color: red;">Is there a how to for using the sandbox in sitepoint? I would
+                        love to<br>
+                        follow along with the examples but I can not figure it out.<br>
+                </p></strong>
+            </p>
 
         </p>
         <h1>Code Sample</h1>
