@@ -37,11 +37,35 @@
             true, try, typeof, var, volatile, void, while, with, yield<br>
             Words not listed but should not use because they are important parts of the Java language<br>
             undefined, NaN, Infinity<br>
+            Only 9 values are always false and these are known as falsy values:<br>
+
+            * "" // double quoted empty string literal<br>
+            * '' // single quoted empty string literal<br>
+            * `` // empty template literal<br>
+            * 0<br>
+            * -0 // considered different to 0 by JavaScript!<br>
+            * NaN<br>
+            * false<br>
+            * null<br>
+            * undefined<br>
 
 
         </p>
         <h1>Code Sample</h1>
-        <code></code>
+        <code>
+            <div id="demo">
+                <p> Input a Number<p>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <button onclick="addNumbers();">Button</button><br>
+                        <div id="result"></div><br>
+                        <p> Input anotherNumber</p><br>
+
+                        <div class="container"></div><br>
+                        <input type="text" id="add" name="add"><br>
+                        <button onclick="calculateadd();">Add +</button> <br>
+                        <button onclick="calculatesub();">Minus -</button><br>
+            </div>
+        </code>
 
     </main>
     <footer>
