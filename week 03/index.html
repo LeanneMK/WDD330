@@ -35,18 +35,20 @@
                 Take the following piece of HTML as an example:<br>
 
                 <p class='warning'>Something has gone <em>very</em> wrong!<br>
-
+                    <p><strong style="color: red;">This took a while to get the right path to display.<br></strong></p>
+                    <img src="../images/ch6nodes.png" alt="Dom Tree"><br>
                     The DOM tree<br>
 
                 </p>
                 <h1>Code Sample</h1>
                 <code>
                     <p style="text-align: center">
-                        <img src="https://eloquentjavascript.net/img/cat.png" style="position: relative">
+                        <img id="catimg" src="https://eloquentjavascript.net/img/cat.png" style="position: relative">
                     </p>
-                    <p><strong style="color: red;">Moving Cat!<br></strong></p>
+                    <p><strong style="color: red;">Moving Cat! Added an Id selector and changed to
+                            getElementById.<br></strong></p>
                     <script>
-                        let cat = document.querySelector("img");
+                        let cat = document.getElementById('catimg');
                         let angle = Math.PI / 2;
 
                         function animate(time, lastTime) {
