@@ -21,10 +21,46 @@
         </ul>
     </nav>
     <main>
-        <h1>Week notes</h1>
-        <h1>Code Sample</h1>
-        <code></code>
 
+        <body>
+            <h1>Week notes</h1>
+            <p>The Document Object Model, or DOM for short, represents an HTML document as a network of connected nodes
+                that
+                form a tree-like structure.<br>
+
+                The DOM treats everything on a web page as a node. <br>
+                HTML tags, the text inside these tags, even the attributes of a tag are all nodes.<br>
+                The HTML tag is the root node, and every other part of the document is a child node of this.<br>
+
+                Take the following piece of HTML as an example:<br>
+
+                <p class='warning'>Something has gone <em>very</em> wrong!<br>
+
+                    The DOM tree<br>
+
+                </p>
+                <h1>Code Sample</h1>
+                <code>
+                    <p style="text-align: center">
+                        <img src="https://eloquentjavascript.net/img/cat.png" style="position: relative">
+                    </p>
+                    <p><strong style="color: red;">Moving Cat!<br></strong></p>
+                    <script>
+                        let cat = document.querySelector("img");
+                        let angle = Math.PI / 2;
+
+                        function animate(time, lastTime) {
+                            if (lastTime != null) {
+                                angle += (time - lastTime) * 0.001;
+                            }
+                            cat.style.top = (Math.sin(angle) * 20) + "px";
+                            cat.style.left = (Math.cos(angle) * 200) + "px";
+                            requestAnimationFrame(newTime => animate(newTime, time));
+                        }
+                        requestAnimationFrame(animate);
+                    </script>
+                </code>
+        </body>
     </main>
     <footer>
         Portfolio | Leanne Kendrick | &copy; 2020

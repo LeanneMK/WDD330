@@ -33,4 +33,6 @@ nav ul li a {
 /**FOOTER**/
 footer {
     text-align: center;
+    background-color: darkseagreen;
+    list-style: none;
 }
