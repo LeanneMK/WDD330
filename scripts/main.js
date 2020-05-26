@@ -1,9 +1,9 @@
 //WEEK 02 Examples
-///function toggleMenu() {
-// document.querySelector('#nav').classList.toggle('open');
-//}
+function toggleMenu() {
+    document.querySelector('#nav').classList.toggle('open');
+}
 
-///document.querySelector('#menu').addEventListener('click', toggleMenu);
+document.querySelector('#menu').addEventListener('click', toggleMenu);
 
 
 ////WEEK 03 EXamples
