@@ -37,19 +37,28 @@
         <ul id="myUL">
             <li>Item 1</li>
             <li>Item 2</li>
-            <li>Read JavaScript</li>
+            <li class='checked'>Read JavaScript</li>
             <li>Organise my notes</li>
             <li>Item 3</li>
             <li>Take quiz</li>
         </ul>
+        <script src="week06.js"></script>
     </main>
     <footer>
         Portfolio | Leanne Kendrick | &copy; 2020<br>
         <p hidden>Special help from https://data-flair.training/blogs/javascript-project-to-do-list/</p>
     </footer>
+    <script>
+        function checked() {
+            var g = document.getElementById("myUL").checked = true;
+        }
 
+        function notChecked() {
+            var w = document.getElementById("myUL").checked = false;
+        }
+    </script>
     <script src="../scripts/main.js"></script>
-    <script src="week06.js"></script>
+
 
 </body>
 

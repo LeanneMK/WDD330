@@ -79,14 +79,14 @@ ul li:hover {
 
 ul li.checked {
     background: darkseagreen;
-    color: white;
+    color: black;
     text-decoration: line-through;
 }
 
 ul li.checked::before {
     content: '';
     position: absolute;
-    border-color: #fff;
+    border-color: #055555;
     border-style: solid;
     border-width: 0 2px 2px 0;
     top: 10px;
