@@ -43,7 +43,7 @@ footer {
 main {
     margin: 10px auto;
     min-width: 250px;
-    max-width: 50%;
+    padding: 10px;
     background-color: silver;
 }
 
