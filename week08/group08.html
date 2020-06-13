@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title id=title>Working with a remote API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap">
+
+</head>
+<nav>
+    <ul id="navigation" class="navigation">
+        <li class="menu_icon">&#9776; Menu</li>
+        <li id="people" class="links">People</li>
+        <li id="starships" class="links">Starships</li>
+        <li id="films" class="links">Films</li>
+        <li id="vehicles" class="links"> Vehicles</li>
+        <li id="species" class="links">Species</li>
+    </ul>
+</nav>
+
+<body>
+    <main>
+        <div class="swapi" id="swapi">
+        </div>
+        <div class="pagination" id="pagination"></div>
+        <div class="btn" id="btn">
+            <button onclick="fetch()">Star Wars Data</button>
+        </div>
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
