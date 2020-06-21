@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330 Leanne Kendrick</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id=nav>
+            <li><a href="#" id="menu">&equiv; Menu</a></li>
+            <li><a href="../">Home</a></li>
+            <li><a href="week 01/">Week 01</a></li>
+            <li><a href="week 02/">Week 02</a></li>
+            <li><a href="week 03/">Week 03</a></li>
+            <li><a href="week 04/">Week 04</a></li>
+            <li><a href="week 05/">Week 05</a></li>
+            <li><a href="week 06/">Week 06</a></li>
+            <li><a href="week 07/">Week 07</a></li>
+            <li><a href="week 08/">Week 08</a></li>
+            <li><a href="week 09/">Week 09</a></li>
+            <li><a href="week 10/">Week 10</a></li>
+            <li><a href="week 11/">Week 11</a></li>
+            <li><a href="week 12/">Week 12</a></li>
+            <li><a href="week 13/">Week 13</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>So this week I watched my Team mates build things in a very different way than I would.
+            They have a way of looking at the process that is very different than how I process it.
+            While doing the reading I searched for examples I could manipulate with a little work.
+            This method has helped me see how the functions I use are as effective as the different
+            way my team mates see things. I'm ok with how we all see differently it leaves room for us
+            to create more amazing things.
+        </p>
+        <h2>I'm Modified</h2>
+
+        <button onclick="myFunction()">Let's see</button>
+
+        <script>
+            function myFunction() {
+                alert("Messed with the JS to change things and learn!");
+            }
+        </script>
+
+        <h2>I'm a Prompt Window</h2>
+
+        <button onclick="myFunctionTwo()">Be Prompted</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function myFunctionTwo() {
+                var txt;
+                var person = prompt("Please enter an 'A '':", "");
+                if (person == null || person == "") {
+                    txt = "User cancelled the prompt.";
+                } else {
+                    txt = "An " + person + "! Thank you :)&#128522;";
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+    </main>
+    <footer>
+        Portfolio | Leanne Kendrick | &copy; 2020
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+
+</body>
+
+</html>
