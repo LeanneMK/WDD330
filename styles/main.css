@@ -43,7 +43,7 @@ footer {
 main {
     margin: 10px auto;
     min-width: 250px;
-    padding: 10px;
+    padding: 10px 10px 40px 10px;
     background-color: silver;
 }
 
@@ -163,4 +163,16 @@ input {
 #clear-list:hover {
     background-color: blue;
     color: white;
+}
+
+input:invalid {
+    border: 2px dashed rgb(223, 6, 107);
+}
+
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:valid {
+    border: 2px solid black;
 }
